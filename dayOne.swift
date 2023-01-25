@@ -9,10 +9,18 @@ favoriteShow = "Rick and Morty"
 
 // Multi line strings
 
-var lee = """ 
+var lee = """
 Name is Lee Leonard 
 Currently Learning swift
 Finally taking a single roadmap this year
 """
 
+//Organize code without multi line strings
+var leonard = """
+    Name \
+    is \
+    Lee \
+    Leonard. 
+
+"""
 print(lee)
