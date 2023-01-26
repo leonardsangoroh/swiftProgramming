@@ -24,3 +24,16 @@ var leonard = """
 
 """
 print(lee)
+
+//Doubles and Booleans
+
+//Double - decimal numbers
+var pi = 3.142
+
+//Boolean
+var truth = true
+
+//String interpolation
+var goals = 2
+
+var result = "Manchester United \(goals)"
