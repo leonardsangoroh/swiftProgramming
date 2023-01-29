@@ -86,3 +86,40 @@ if firstCard == secondCard {
 } else {
     print("Cards are different")
 }
+
+//Switch statements
+
+let weather = "rain"
+
+switch weather {
+    case "rain":
+        print("Carry an umbrellla")
+    case "snow":
+        print("Stay indoors")
+    case "sunny":
+        print("Wear sunscreen")
+    default:
+        print("Enjoy your day!")
+    
+}
+
+//Range operators
+/*
+ ..< creates ranges up to but excluding the final value (1..<5) = 1,2,3,4
+ ... creates range up to and including the final value (1...5) = 1,2,3,4,5
+ */
+
+let total = 15
+
+switch total {
+case 0..<10:
+    print("You are a poor striker")
+case 10..<20:
+    print("You had a decent season")
+case 20..<30:
+    print("Are you Haaland!!!!")
+default:
+    print("How many goals you got?")
+}
+
+//Summary
