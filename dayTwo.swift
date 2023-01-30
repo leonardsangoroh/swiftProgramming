@@ -18,6 +18,8 @@ To use a set, there must be no duplicates in your data
 and you must be seeking faster retrival
 */
 
+let colors = Set(["red", "Green", "Blue"])
+
 //Tuples and arrays
 /*
 Tuples hold a fixed set of things that can't be changed
