@@ -37,3 +37,16 @@ var truth = true
 var goals = 2
 
 var result = "Manchester United \(goals)"
+
+//Constants
+let pi = 3.142
+
+// Type annotations
+/* Swift infers data types depending on the data
+    a variable has been assigned. However, one can decide
+    decide to explicitly declare the variable types.
+*/
+let album: String = "Be rich or die trying"
+let year: Int = 2001
+let height: Double = 1.78
+let fiftyCent: Bool = true
