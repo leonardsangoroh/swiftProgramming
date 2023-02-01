@@ -75,3 +75,20 @@ print(userThree.first)
 */
 
 //Parameter labels
+/*
+Swift lets us give a parameter 2 names, one for internal use and the other for external use
+     external (to) then internal (name)
+*/
+func sayHello (to name: "String") {
+    print("Hello, \(name)!")
+}
+
+let jina = sayHello( to: "Leonard")
+
+//Omitting parameter labels
+//Omitting enables to pass aguments without stating their parameter name
+func greet ( _ person: String) {
+    print("Hello, \(person)! ")
+}
+
+greet("Lee")
