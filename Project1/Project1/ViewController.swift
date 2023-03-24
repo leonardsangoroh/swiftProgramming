@@ -7,7 +7,8 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+//Create a new screen, ViewController, and have it built on UITableViewController
+class ViewController: UITableViewController {
     
     var pictures = [String]()
 
@@ -26,6 +27,18 @@ class ViewController: UIViewController {
             }
         }
         print(pictures)
+    }
+    
+    //How many rows should appear at the table
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return pictures.count
+    }
+    
+    //What each row should look like
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Picture", for:indexPath)
+        cell.textLabel?.text = pictures[indexPath.row]
+        return cell
     }
 
 
