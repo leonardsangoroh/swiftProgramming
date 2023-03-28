@@ -12,12 +12,14 @@ class DetailViewController: UIViewController {
     @IBOutlet var imageView: UIImageView!
     
     var selectedImage: String?
+    var position:Int = 0
+    var total:Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //Setting Navbar Title
-        title = selectedImage
+        title = "\(position) of \(total)"
         
         navigationItem.largeTitleDisplayMode = .never
 

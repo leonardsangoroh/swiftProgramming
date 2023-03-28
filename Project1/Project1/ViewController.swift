@@ -46,14 +46,19 @@ class ViewController: UITableViewController {
         //Making the cells reusable
         let cell = tableView.dequeueReusableCell(withIdentifier: "Picture", for:indexPath)
         cell.textLabel?.text = pictures[indexPath.row]
+        //Changing the text color
+        cell.textLabel?.textColor = .red
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-                                                                                //typecasting
+                                                                               //typecasting
         if let vc = storyboard?.instantiateViewController(withIdentifier: "Detail") as? DetailViewController {
             vc.selectedImage = pictures[indexPath.row]
             navigationController?.pushViewController(vc, animated: true)
+            
+            vc.position = indexPath.row + 1
+            vc.total = pictures.count
         }
     }
 
