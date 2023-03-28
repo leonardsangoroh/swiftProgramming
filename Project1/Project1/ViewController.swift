@@ -31,6 +31,8 @@ class ViewController: UITableViewController {
                 pictures.append(item)
             }
         }
+        //sorting picture names in ascending order
+        pictures = pictures.sorted()
         print(pictures)
     }
     
