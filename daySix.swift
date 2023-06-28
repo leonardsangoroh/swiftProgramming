@@ -1,7 +1,7 @@
 //Closures part one
 
 /* 
-closures are functions that can be assigned to vairables,
+closures are functions that can be assigned to variables,
 passed as parameters in other functions
 */
 
@@ -13,7 +13,7 @@ driving()
 
 //Accepting parameters in a closure
 
-let drivingAgain { (place: String) in
+let drivingAgain = { (place: String) in
     print("I'm going to \(place)")
 
 }
@@ -21,7 +21,7 @@ let drivingAgain { (place: String) in
 driving("London")
 
 //Returning values from a closure
-let drivingOnceMore { (place: String) -> String in
+let drivingOnceMore = { (place: String) -> String in
     return "I'm going to \(place)"
 
 }
@@ -31,7 +31,7 @@ let message = driving("London")
 print(message)
 
 //Return a value without accepting any parameters
-let paymet = { () -> Bool in
+let payment = { () -> Bool in
     print("Paying is an anonymous person...")
     return true
 
