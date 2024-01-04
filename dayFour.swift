@@ -25,7 +25,7 @@ for _ in names {
 //for loop vs while loop
 /* 
 for loops are used with finite sequences, e.g. no. of items
-in an array while while loops can loop untile any arbitrary 
+in an array while while loops can loop until any arbitrary 
 condition becomes false
 */
 

@@ -35,7 +35,7 @@ x != y
 x < y
 x >= y
 
-//Strings also work since srtings have a natural alphabetical order
+//Strings also work since strings have a natural alphabetical order
 "Taylor" <= "Swift"
 
 //Conditions
@@ -93,7 +93,7 @@ let weather = "rain"
 
 switch weather {
     case "rain":
-        print("Carry an umbrellla")
+        print("Carry an umbrella")
     case "snow":
         print("Stay indoors")
     case "sunny":

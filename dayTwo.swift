@@ -1,6 +1,6 @@
 //Array 
 /*
-In swift, arrays can either be constants or variables
+In Swift, arrays can either be constants or variables
 Arrays hold a series of data
 */
 
@@ -10,12 +10,12 @@ Both hold multiple values inside a single variable.
 However, sets are unordered and don't contain duplicate values
 while arrays retain their order and can have duplicates 
 
-The difference makes sets more useful when checking if and item 
-exists due to faster retrival unlike an array that has to be 
+The difference makes sets more useful when checking if an item 
+exists due to faster retrieval unlike an array that has to be 
 looped through
 
 To use a set, there must be no duplicates in your data
-and you must be seeking faster retrival
+and you must be seeking faster retrieval
 */
 
 let colors = Set(["red", "Green", "Blue"])
@@ -37,14 +37,14 @@ person.name
 //When to use an array, set, or tuple
 /*
 Arrays keep the order and can have duplicates, sets are unordered
-can't have udplicates, and tuples have fixed size of fixed types 
+can't have duplicates, and tuples have fixed sizes of fixed types 
 inside them
 */
 
 //Dictionaries
 /* 
 Dictionaries allow for choosing of a key that identifies
-the items we want to add. THese optimizes the retrival time
+the items we want to add. This optimizes the retrieval time
 
 Unfortunately, one can't be guaranteed that a key in a dictionary exists
 
@@ -63,7 +63,7 @@ we could set a default value
 */
 let historyResult = results["geography", default: 0]
 
-//Don't understand how a default value is set for an undeclared dictionery
+//Don't understand how a default value is set for an undeclared dictionary
 let historyResult = results["history", default: 0]
 
 //Empty Collection
@@ -71,7 +71,7 @@ let historyResult = results["history", default: 0]
 
 
 //Enums
-// A special class that represent a group of constants (unchangeable)
+// A special class that represents a group of constants (unchangeable)
 
 enum Weather {
     case sunny
@@ -79,14 +79,14 @@ enum Weather {
     case rainy(chance: Int, amount: Int)
 }
 
-// Enums with associated values enable us add extra info to an enum case
+// Enums with associated values enable us to add extra info to an enum case
 //(Think of them as adjectives to a noun, as it lets us describe the case in more detail)
 
-//Why Enums have raw values
+//Why Enums have Raw values
 enum Mood: Int{
     case happy
     case sad
-    case groumpy
+    case grumpy
     case sleepy
     case hungry
 }
