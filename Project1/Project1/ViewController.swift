@@ -22,18 +22,21 @@ class ViewController: UITableViewController {
         //Setting the title to Large
         navigationController?.navigationBar.prefersLargeTitles = true
         
-        let fm = FileManager.default
-        let path = Bundle.main.resourcePath!
-        let items = try! fm.contentsOfDirectory(atPath: path)
-        
-        for item in items {
-            if item.hasPrefix("nssl") {
-                pictures.append(item)
+        DispatchQueue.global().async {
+            let fm = FileManager.default
+            let path = Bundle.main.resourcePath!
+            let items = try! fm.contentsOfDirectory(atPath: path)
+            
+            for item in items {
+                if item.hasPrefix("nssl") {
+                    self.pictures.append(item)
+                }
             }
+            //sorting picture names in ascending order
+            self.pictures = self.pictures.sorted()
+            print(self.pictures)
         }
-        //sorting picture names in ascending order
-        pictures = pictures.sorted()
-        print(pictures)
+
     }
     
     //How many rows should appear at the table
